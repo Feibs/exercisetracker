@@ -15,8 +15,6 @@ app.get('/', (req, res) => {
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
-console.log(process.env.MONGO_URI);
-
 // Schemas
 const UserSchema = new mongoose.Schema({
   username: {type:String}
