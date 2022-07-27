@@ -1,17 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: Nunito, sans-serif;
 }
 
 body {
   font-family:sans-serif;
   margin: 25px;
   color: #222;
-  background-color: #f5f5f5;
+  background-color: #BDC9FF;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.log-note{
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 h1 {
   font-weight: bold;
-  
 }
 
 p {
@@ -19,13 +32,12 @@ p {
 }
 
 form {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   padding: 15px;
-  background-color: #87D37C;
   display: inline-block;
   width: 100%;
   max-width: 340px;
-  border-radius: 5px;
+  border-radius: 5px;  
 }
 
 input {
@@ -42,18 +54,36 @@ input[type=submit] {
   font-size: 16px;
   border-radius: 3px;
   background-color: #E4F1FE;
-  border: 1px solid grey;
-  box-shadow: 2px 2px #999;
+  border: 1px solid black;
+  box-shadow: 2px 2px gray;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #FFFEC4;
+  background-color: #fff0f5;
+  border: 1px solid darkslategray;
+  box-shadow: none;
 }
 
 code {
   font-family: monospace;
   font-size: 1.2em;
-  background-color: #FFFEC4;
+  background-color: #FFFFFF;
   padding: 2px;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+label {
+  color: #000000;
+  font-weight: bold;
 }
